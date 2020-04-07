@@ -1,0 +1,11 @@
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\InventoryDatabaseUITest.exe.config
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\InventoryDatabaseUITest.exe
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\InventoryDatabaseUITest.pdb
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.csprojAssemblyReference.cache
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.Form1.resources
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.Form2.resources
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.Form3.resources
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.Properties.Resources.resources
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.csproj.GenerateResource.cache
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.exe
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.pdb

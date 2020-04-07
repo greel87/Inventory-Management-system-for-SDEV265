@@ -28,85 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.addStock = new System.Windows.Forms.Button();
+            this.addCustomer = new System.Windows.Forms.Button();
+            this.viewInv = new System.Windows.Forms.Button();
+            this.viewCust = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // addStock
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(122, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add Stock to Inventory\r\n";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addStock.Location = new System.Drawing.Point(122, 180);
+            this.addStock.Name = "addStock";
+            this.addStock.Size = new System.Drawing.Size(146, 42);
+            this.addStock.TabIndex = 0;
+            this.addStock.Text = "Add Stock to Inventory\r\n";
+            this.addStock.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // addCustomer
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(533, 180);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 28);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Add New Customer";
-            this.button2.UseVisualStyleBackColor = true;
+            this.addCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCustomer.Location = new System.Drawing.Point(533, 180);
+            this.addCustomer.Name = "addCustomer";
+            this.addCustomer.Size = new System.Drawing.Size(146, 28);
+            this.addCustomer.TabIndex = 1;
+            this.addCustomer.Text = "Add New Customer";
+            this.addCustomer.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // viewInv
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(122, 265);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 28);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "View Inventory";
-            this.button3.UseVisualStyleBackColor = true;
+            this.viewInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewInv.Location = new System.Drawing.Point(122, 265);
+            this.viewInv.Name = "viewInv";
+            this.viewInv.Size = new System.Drawing.Size(146, 28);
+            this.viewInv.TabIndex = 2;
+            this.viewInv.Text = "View Inventory";
+            this.viewInv.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // viewCust
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(533, 265);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(146, 28);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "View Customers";
-            this.button4.UseVisualStyleBackColor = true;
+            this.viewCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewCust.Location = new System.Drawing.Point(533, 265);
+            this.viewCust.Name = "viewCust";
+            this.viewCust.Size = new System.Drawing.Size(146, 28);
+            this.viewCust.TabIndex = 3;
+            this.viewCust.Text = "View Customers";
+            this.viewCust.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(349, 66);
+            this.label1.Location = new System.Drawing.Point(127, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 39);
+            this.label1.Size = new System.Drawing.Size(552, 39);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Home ";
+            this.label1.Text = "Carolina Air Inventory Management";
             // 
-            // button5
+            // exit
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(356, 377);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 29);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "QUIT";
-            this.button5.UseVisualStyleBackColor = true;
+            this.exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit.Location = new System.Drawing.Point(356, 377);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(120, 29);
+            this.exit.TabIndex = 5;
+            this.exit.Text = "QUIT";
+            this.exit.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.exit;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.viewCust);
+            this.Controls.Add(this.viewInv);
+            this.Controls.Add(this.addCustomer);
+            this.Controls.Add(this.addStock);
             this.Name = "Form1";
             this.Text = "Home";
             this.ResumeLayout(false);
@@ -116,12 +118,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button addStock;
+        private System.Windows.Forms.Button addCustomer;
+        private System.Windows.Forms.Button viewInv;
+        private System.Windows.Forms.Button viewCust;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button exit;
     }
 }
 
