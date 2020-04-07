@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.viewInv = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             this.prodName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.serialNumber = new System.Windows.Forms.CheckBox();
@@ -85,25 +85,25 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Add Stock to Invetory";
             // 
-            // button3
+            // viewInv
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(308, 290);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 28);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "View Inventory";
-            this.button3.UseVisualStyleBackColor = true;
+            this.viewInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewInv.Location = new System.Drawing.Point(308, 290);
+            this.viewInv.Name = "viewInv";
+            this.viewInv.Size = new System.Drawing.Size(146, 28);
+            this.viewInv.TabIndex = 5;
+            this.viewInv.Text = "View Inventory";
+            this.viewInv.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // back
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(325, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 29);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "HOME";
-            this.button1.UseVisualStyleBackColor = true;
+            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Location = new System.Drawing.Point(325, 387);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(120, 29);
+            this.back.TabIndex = 7;
+            this.back.Text = "Back";
+            this.back.UseVisualStyleBackColor = true;
             // 
             // prodName
             // 
@@ -140,8 +140,8 @@
             this.Controls.Add(this.serialNumber);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.prodName);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.back);
+            this.Controls.Add(this.viewInv);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -162,8 +162,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button viewInv;
+        private System.Windows.Forms.Button back;
         private System.Windows.Forms.TextBox prodName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox serialNumber;
