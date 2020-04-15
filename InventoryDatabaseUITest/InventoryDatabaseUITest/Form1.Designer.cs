@@ -34,6 +34,7 @@
             this.viewCust = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Button();
+            this.cUPC = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addStock
@@ -97,12 +98,22 @@
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = true;
             // 
+            // cUPC
+            // 
+            this.cUPC.Location = new System.Drawing.Point(356, 224);
+            this.cUPC.Name = "cUPC";
+            this.cUPC.Size = new System.Drawing.Size(101, 29);
+            this.cUPC.TabIndex = 6;
+            this.cUPC.Text = "Create UPC";
+            this.cUPC.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.exit;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cUPC);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.viewCust);
@@ -124,6 +135,7 @@
         private System.Windows.Forms.Button viewCust;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.Button cUPC;
     }
 }
 
