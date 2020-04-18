@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.StockListBox = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // StockListBox
+            // 
+            this.StockListBox.FormattingEnabled = true;
+            this.StockListBox.Location = new System.Drawing.Point(16, 148);
+            this.StockListBox.Name = "StockListBox";
+            this.StockListBox.Size = new System.Drawing.Size(773, 277);
+            this.StockListBox.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(293, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 39);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "View Stock";
+            // 
+            // viewStockfrm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.StockListBox);
+            this.Name = "viewStockfrm";
             this.Text = "viewStockfrm";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox StockListBox;
+        private System.Windows.Forms.Label label1;
     }
 }
