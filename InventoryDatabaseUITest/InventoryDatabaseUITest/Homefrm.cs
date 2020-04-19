@@ -16,5 +16,6 @@ namespace InventoryDatabaseUITest
         {
             InitializeComponent();
         }
+
     }
 }

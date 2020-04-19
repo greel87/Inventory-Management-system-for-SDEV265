@@ -47,12 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BAL\customer.cs" />
+    <Compile Include="BAL\orders.cs" />
+    <Compile Include="BAL\stock.cs" />
     <Compile Include="customerQuery.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="customerQuery.Designer.cs">
       <DependentUpon>customerQuery.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAL\Helper.cs" />
     <Compile Include="Homefrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,9 +126,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BAL\" />
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
