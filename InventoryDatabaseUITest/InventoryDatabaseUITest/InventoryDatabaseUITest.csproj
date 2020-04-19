@@ -91,6 +91,9 @@
     <Compile Include="viewStockfrm.Designer.cs">
       <DependentUpon>viewStockfrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="customerQuery.resx">
+      <DependentUpon>customerQuery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Homefrm.resx">
       <DependentUpon>Homefrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addCustomerfrm.resx">
       <DependentUpon>addCustomerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventoryQuery.resx">
+      <DependentUpon>inventoryQuery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,6 +115,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="viewCustomerfrm.resx">
+      <DependentUpon>viewCustomerfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewStockfrm.resx">
+      <DependentUpon>viewStockfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
