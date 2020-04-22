@@ -66,7 +66,7 @@
             this.viewInv.Name = "viewInv";
             this.viewInv.Size = new System.Drawing.Size(146, 28);
             this.viewInv.TabIndex = 6;
-            this.viewInv.Text = "View Inventory";
+            this.viewInv.Text = "View Customer";
             this.viewInv.UseVisualStyleBackColor = true;
             // 
             // back
@@ -215,7 +215,7 @@
             this.label10.TabIndex = 27;
             this.label10.Text = "Zip Code";
             // 
-            // Form3
+            // addCustomerfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -239,8 +239,8 @@
             this.Controls.Add(this.back);
             this.Controls.Add(this.viewInv);
             this.Controls.Add(this.label3);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "addCustomerfrm";
+            this.Text = "Back";
             this.ResumeLayout(false);
             this.PerformLayout();
 

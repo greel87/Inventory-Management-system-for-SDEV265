@@ -17,5 +17,17 @@ namespace InventoryDatabaseUITest
             InitializeComponent();
         }
 
+        private void addStock_Click(object sender, EventArgs e)
+        {
+            addStockfrm addStockform = new addStockfrm();
+            addStockform.Show();
+            this.Hide();
+
+        }
+
+        private void viewInv_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

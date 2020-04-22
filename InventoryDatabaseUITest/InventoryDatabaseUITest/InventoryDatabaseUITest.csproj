@@ -47,9 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BAL\customer.cs" />
-    <Compile Include="BAL\orders.cs" />
-    <Compile Include="BAL\stock.cs" />
+    <Compile Include="BAL\customerBAL.cs" />
+    <Compile Include="BAL\ordersBAL.cs" />
+    <Compile Include="BAL\stockBAL.cs" />
     <Compile Include="customerQuery.cs">
       <SubType>Form</SubType>
     </Compile>

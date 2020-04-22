@@ -45,7 +45,7 @@ Create Table if not exists Orders
 (
 Order_ID int UNSIGNED not null  AUTO_INCREMENT PRIMARY KEY,
 Customer_ID INT UNSIGNED not null,
-Order_Date Date not null
+Order_Date Date not null,
 
 FOREIGN KEY (Customer_ID) REFERENCES customer(Customer_ID)
 );

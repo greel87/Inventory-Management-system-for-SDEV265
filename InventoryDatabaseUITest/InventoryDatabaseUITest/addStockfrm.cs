@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace InventoryDatabaseUITest
 {
+   
     public partial class addStockfrm : Form
     {
+        Homefrm homefrm = new Homefrm();
         public addStockfrm()
         {
             InitializeComponent();
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            
+            homefrm.Show();
+            this.Close();
         }
     }
 }

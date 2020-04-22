@@ -8,7 +8,6 @@ namespace InventoryDatabaseUITest.BAL
 {
    public class customerBAL
     {
-        public int Customer_ID { get; set; }
         public string Fname { get; set; }
         public string Lname { get; set; }
         public string Street { get; set; }

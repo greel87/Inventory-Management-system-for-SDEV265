@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InventoryDatabaseUITest.BAL
 {
-   public class orders
+   public class ordersBAL
     {
         public int Order_ID { get; set; }
         public int Customer_ID { get; set; }

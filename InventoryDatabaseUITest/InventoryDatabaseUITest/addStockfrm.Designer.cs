@@ -104,6 +104,7 @@
             this.back.TabIndex = 7;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // prodName
             // 
@@ -132,7 +133,7 @@
             this.serialNumber.Text = "Requires Serial number";
             this.serialNumber.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // addStockfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,7 +148,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.stockQuant);
             this.Controls.Add(this.UPC);
-            this.Name = "Form2";
+            this.Name = "addStockfrm";
             this.Text = "Add Stock";
             ((System.ComponentModel.ISupportInitialize)(this.stockQuant)).EndInit();
             this.ResumeLayout(false);

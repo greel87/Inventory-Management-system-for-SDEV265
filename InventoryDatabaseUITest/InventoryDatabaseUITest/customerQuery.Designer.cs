@@ -62,7 +62,7 @@
             // CustomerQueryListBox
             // 
             this.CustomerQueryListBox.FormattingEnabled = true;
-            this.CustomerQueryListBox.Location = new System.Drawing.Point(29, 115);
+            this.CustomerQueryListBox.Location = new System.Drawing.Point(12, 75);
             this.CustomerQueryListBox.Name = "CustomerQueryListBox";
             this.CustomerQueryListBox.Size = new System.Drawing.Size(742, 290);
             this.CustomerQueryListBox.TabIndex = 4;

@@ -46,6 +46,7 @@
             this.addStock.TabIndex = 0;
             this.addStock.Text = "Add Stock to Inventory\r\n";
             this.addStock.UseVisualStyleBackColor = true;
+            this.addStock.Click += new System.EventHandler(this.addStock_Click);
             // 
             // addCustomer
             // 
@@ -66,6 +67,7 @@
             this.viewInv.TabIndex = 2;
             this.viewInv.Text = "View Inventory";
             this.viewInv.UseVisualStyleBackColor = true;
+            this.viewInv.Click += new System.EventHandler(this.viewInv_Click);
             // 
             // viewCust
             // 
