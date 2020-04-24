@@ -11,7 +11,7 @@ CREATE PROCEDURE get_customers
 )
 BEGIN
 	SELECT * 
- 	FROM customers
+ 	FROM customer
 	WHERE Lname = last;
 END$$
 
