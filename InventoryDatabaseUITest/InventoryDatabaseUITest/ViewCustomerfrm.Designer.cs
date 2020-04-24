@@ -1,6 +1,6 @@
 ﻿namespace InventoryDatabaseUITest
 {
-    partial class customerQueryfrm
+    partial class ViewCustomerfrm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.custSearchbtn = new System.Windows.Forms.Button();
             this.CustomerQueryListBox = new System.Windows.Forms.ListBox();
+            this.custBackbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lnametxtbx
@@ -58,6 +59,7 @@
             this.custSearchbtn.TabIndex = 5;
             this.custSearchbtn.Text = "Search";
             this.custSearchbtn.UseVisualStyleBackColor = true;
+            this.custSearchbtn.Click += new System.EventHandler(this.custSearchbtn_Click);
             // 
             // CustomerQueryListBox
             // 
@@ -67,16 +69,27 @@
             this.CustomerQueryListBox.Size = new System.Drawing.Size(742, 290);
             this.CustomerQueryListBox.TabIndex = 4;
             // 
-            // customerQueryfrm
+            // custBackbtn
+            // 
+            this.custBackbtn.Location = new System.Drawing.Point(346, 396);
+            this.custBackbtn.Name = "custBackbtn";
+            this.custBackbtn.Size = new System.Drawing.Size(75, 23);
+            this.custBackbtn.TabIndex = 8;
+            this.custBackbtn.Text = "Back";
+            this.custBackbtn.UseVisualStyleBackColor = true;
+            this.custBackbtn.Click += new System.EventHandler(this.custBackbtn_Click);
+            // 
+            // ViewCustomerfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.custBackbtn);
             this.Controls.Add(this.Lnametxtbx);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.custSearchbtn);
             this.Controls.Add(this.CustomerQueryListBox);
-            this.Name = "customerQueryfrm";
+            this.Name = "ViewCustomerfrm";
             this.Text = "Search Customer";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -89,5 +102,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button custSearchbtn;
         private System.Windows.Forms.ListBox CustomerQueryListBox;
+        private System.Windows.Forms.Button custBackbtn;
     }
 }

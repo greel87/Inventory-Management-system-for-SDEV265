@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace InventoryDatabaseUITest
 {
-    public partial class customerQueryfrm : Form
+    public partial class ViewInventoryfrm : Form
     {
-        public customerQueryfrm()
+        public ViewInventoryfrm()
         {
             InitializeComponent();
         }
-
-    
     }
 }

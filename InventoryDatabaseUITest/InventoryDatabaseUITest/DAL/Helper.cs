@@ -9,7 +9,7 @@ namespace InventoryDatabaseUITest.DAL
 {
     public static class Helper
     {
-        //gets the connection string to connect to the database
+        //gets the connection string to connect to the database. String stored in app.config
         public static string cnnVal(string name)
         {
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;

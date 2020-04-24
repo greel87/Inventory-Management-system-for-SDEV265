@@ -78,6 +78,7 @@
             this.viewCust.TabIndex = 3;
             this.viewCust.Text = "View Customers";
             this.viewCust.UseVisualStyleBackColor = true;
+            this.viewCust.Click += new System.EventHandler(this.viewCust_Click);
             // 
             // label1
             // 
@@ -99,6 +100,7 @@
             this.exit.TabIndex = 5;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // UPC
             // 

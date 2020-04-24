@@ -55,23 +55,12 @@
     <Compile Include="BAL\OrderLineBAL.cs" />
     <Compile Include="BAL\ordersBAL.cs" />
     <Compile Include="BAL\stockBAL.cs" />
-    <Compile Include="invmanagdbtestDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="invmanagdbtestDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>invmanagdbtestDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ViewCustomer.cs">
+    <Compile Include="ViewCustomerfrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewCustomer.Designer.cs">
-      <DependentUpon>ViewCustomer.cs</DependentUpon>
+    <Compile Include="ViewCustomerfrm.Designer.cs">
+      <DependentUpon>ViewCustomerfrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAL\dbConnection.cs" />
     <Compile Include="DAL\Helper.cs" />
     <Compile Include="DAL\queryLib.cs" />
     <Compile Include="Homefrm.cs">
@@ -92,16 +81,16 @@
     <Compile Include="addCustomerfrm.Designer.cs">
       <DependentUpon>addCustomerfrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewInventory.cs">
+    <Compile Include="ViewInventoryfrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewInventory.Designer.cs">
-      <DependentUpon>ViewInventory.cs</DependentUpon>
+    <Compile Include="ViewInventoryfrm.Designer.cs">
+      <DependentUpon>ViewInventoryfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ViewCustomer.resx">
-      <DependentUpon>ViewCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="ViewCustomerfrm.resx">
+      <DependentUpon>ViewCustomerfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Homefrm.resx">
       <DependentUpon>Homefrm.cs</DependentUpon>
@@ -112,8 +101,8 @@
     <EmbeddedResource Include="addCustomerfrm.resx">
       <DependentUpon>addCustomerfrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewInventory.resx">
-      <DependentUpon>ViewInventory.cs</DependentUpon>
+    <EmbeddedResource Include="ViewInventoryfrm.resx">
+      <DependentUpon>ViewInventoryfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,28 +113,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="invmanagdbtestDataSet.xsc">
-      <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="invmanagdbtestDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>invmanagdbtestDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="invmanagdbtestDataSet.xss">
-      <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="invmanagdbtestDataSet1.xsc">
-      <DependentUpon>invmanagdbtestDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="invmanagdbtestDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>invmanagdbtestDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="invmanagdbtestDataSet1.xss">
-      <DependentUpon>invmanagdbtestDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

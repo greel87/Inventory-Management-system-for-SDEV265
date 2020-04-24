@@ -7,12 +7,12 @@ Drop procedure if exists get_customers$$
 
 CREATE PROCEDURE get_customers
 (
-	IN lname VARCHAR(255)
+	IN last VARCHAR(255)
 )
 BEGIN
 	SELECT * 
  	FROM customers
-	WHERE Lname = lname;
+	WHERE Lname = last;
 END$$
 
 DELIMITER ;
@@ -39,13 +39,13 @@ Drop procedure if exists add_customers$$
 CREATE PROCEDURE add_customers 
 (
 	IN ID int(10),
-    IN fname VARCHAR(255),
-    IN lname VARCHAR(255),
-    IN street VARCHAR(255),
-    IN state_id char(2),
-    IN zip char(5),
-    IN phone char(10),
-    IN email VARCHAR(255)
+    IN firstName VARCHAR(255),
+    IN lastName VARCHAR(255),
+    IN streetAddress VARCHAR(255),
+    IN state_id_code char(2),
+    IN zipCode char(5),
+    IN phoneNumber char(10),
+    IN emailAddress VARCHAR(255)
 )
 BEGIN
 	 insert into customer
@@ -62,13 +62,13 @@ BEGIN
      values
      (
          ID,
-         fname,
-         lname,
-         street,
-         state_id,
-         zip,
-         phone,
-         email
+         firstName,
+         lastName,
+         streetAddress,
+         state_id_code,
+         zipCode,
+         phoneNumber,
+         emailAddress
      );
 END$$
 
@@ -80,11 +80,11 @@ Drop procedure if exists add_new_stock$$
 
 CREATE PROCEDURE add_new_stock 
 (
-	IN upc VARCHAR(12),
-    IN prod_name VARCHAR(255),
-    IN serial_number_required VARCHAR(255),
-    IN quantity int,
-    IN Serial_Number char(2)
+	IN upcVal VARCHAR(12),
+    IN Product VARCHAR(255),
+    IN SerialRequired tinyint(1),
+    IN quantityAmount int,
+    IN SerialNumber char(2)
 
 )
 BEGIN
@@ -98,11 +98,11 @@ BEGIN
      )
      values
      (
-         upc,
-         prod_name,
-         serial_number_required,
-         quantity,
-         Serial_Number
+         upcVal,
+         Product,
+         SerialRequired,
+         quantityAmount,
+         SerialNumber
      );
 END$$
 
@@ -114,14 +114,14 @@ Drop procedure if exists update_stock_add$$
 
 CREATE PROCEDURE update_stock_add 
 (
-    IN prod_name VARCHAR(12),
-    IN quantity int
+    IN Product VARCHAR(12),
+    IN quantityAmount int
 
 )
 BEGIN
 	 UPDATE stock
-     SET Quantity = Quantity + quantity
-     WHERE Prod_Name = prod_name;
+     SET Quantity = Quantity + quantityAmount
+     WHERE Prod_Name = Product;
 END$$
 
 DELIMITER ;
@@ -132,14 +132,14 @@ Drop procedure if exists update_stock_reduce$$
 
 CREATE PROCEDURE update_stock_reduce
 (
-    IN prod_name VARCHAR(12),
-    IN quantity int
+    IN Product VARCHAR(12),
+    IN quantityAmount int
 
 )
 BEGIN
 	 UPDATE stock
-     SET Quantity = Quantity - quantity
-     WHERE Prod_Name = prod_name;
+     SET Quantity = Quantity - quantityAmount
+     WHERE Prod_Name = Product;
 END$$
 
 DELIMITER ;
@@ -151,22 +151,21 @@ Drop procedure if exists update_customer$$
 
 CREATE PROCEDURE update_customer 
 (
-    IN ID int(10),
-    IN fname VARCHAR(255),
-    IN lname VARCHAR(255),
-    IN street VARCHAR(255),
-    IN state_id char(2),
-    IN zip char(5),
-    IN phone char(10),
-    IN email VARCHAR(255)
-
+   IN ID int(10),
+    IN firstName VARCHAR(255),
+    IN lastName VARCHAR(255),
+    IN streetAddress VARCHAR(255),
+    IN state_id_code char(2),
+    IN zipCode char(5),
+    IN phoneNumber char(10),
+    IN emailAddress VARCHAR(255)
 )
 BEGIN
 	 UPDATE customer
-     SET Customer_ID = ID, fname = Fname, Lname = lname, 
-     Street = street, State_ID = state_id, Zip = zip,
-     Phone = phone, Email = email
-     WHERE Lname = lname;
+     SET Fname = firstName, Lname = lastName, 
+     Street = streetAddress, State_ID = state_id_code, Zip = zipcode,
+     Phone = phoneNumber, Email = emailAddress
+     WHERE Lname = lastName;
 END$$
 
 DELIMITER ;
@@ -177,12 +176,12 @@ Drop procedure if exists delete_stock$$
 
 CREATE PROCEDURE delete_stock 
 (
-    IN prod_name VARCHAR(12)
+    IN Product VARCHAR(12)
 
 )
 BEGIN
 	 delete from stock
-     where Prod_Name = prod_name;
+     where Prod_Name = Product;
 END$$
 
 DELIMITER ;
@@ -193,12 +192,12 @@ Drop procedure if exists delete_customer$$
 
 CREATE PROCEDURE delete_customer 
 (
-    IN lname VARCHAR(12)
+    IN lastName VARCHAR(12)
 
 )
 BEGIN
 	 delete from customer
-     where Lname = lname;
+     where Lname = lastName;
 END$$
 
 DELIMITER ;

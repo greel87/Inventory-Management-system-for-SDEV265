@@ -13,7 +13,6 @@ namespace InventoryDatabaseUITest
    
     public partial class addStockfrm : Form
     {
-        Homefrm homefrm = new Homefrm();
         public addStockfrm()
         {
             InitializeComponent();
@@ -21,9 +20,13 @@ namespace InventoryDatabaseUITest
 
         private void back_Click(object sender, EventArgs e)
         {
-            
-            homefrm.Show();
-            this.Close();
+            //taken from https://stackoverflow.com/questions/3005732/showing-a-hidden-form
+            var formToShow = Application.OpenForms.Cast<Form>().FirstOrDefault(c => c is Homefrm);
+            if (formToShow != null)
+            {
+                formToShow.Show();
+                this.Close();
+            }
         }
     }
 }

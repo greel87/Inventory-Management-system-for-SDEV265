@@ -1,6 +1,6 @@
 ﻿namespace InventoryDatabaseUITest
 {
-    partial class inventoryQueryfrm
+    partial class ViewInventoryfrm
     {
         /// <summary>
         /// Required designer variable.
