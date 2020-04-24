@@ -13,5 +13,12 @@ namespace InventoryDatabaseUITest.BAL
         public bool Serial_Number_Required { get; set; }
         public int Quantity { get; set; }
         public int serial_number { get; set; }
+
+
+        public string stockInfoFull
+        {   //1234567 name 2 123456789102 this displays the stock info requested
+            get { return $"{ UPC } { Prod_Name } { Quantity }{ serial_number }"; }
+        }
+
     }
 }

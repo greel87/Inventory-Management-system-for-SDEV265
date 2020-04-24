@@ -240,7 +240,7 @@
             this.Controls.Add(this.viewInv);
             this.Controls.Add(this.label3);
             this.Name = "addCustomerfrm";
-            this.Text = "Back";
+            this.Text = "Add Customer";
             this.ResumeLayout(false);
             this.PerformLayout();
 

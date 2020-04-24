@@ -1,6 +1,6 @@
 ﻿namespace InventoryDatabaseUITest
 {
-    partial class inventoryQuery
+    partial class inventoryQueryfrm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.inventoryQueryListBox = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.invSearchbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.prodtxtbx = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // inventoryQueryListBox
@@ -42,42 +42,42 @@
             this.inventoryQueryListBox.Size = new System.Drawing.Size(742, 290);
             this.inventoryQueryListBox.TabIndex = 0;
             // 
-            // button1
+            // invSearchbtn
             // 
-            this.button1.Location = new System.Drawing.Point(402, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.invSearchbtn.Location = new System.Drawing.Point(405, 29);
+            this.invSearchbtn.Name = "invSearchbtn";
+            this.invSearchbtn.Size = new System.Drawing.Size(75, 23);
+            this.invSearchbtn.TabIndex = 1;
+            this.invSearchbtn.Text = "Search";
+            this.invSearchbtn.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(239, 69);
+            this.label1.Location = new System.Drawing.Point(202, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.label1.Text = "Product Name";
             // 
-            // textBox1
+            // prodtxtbx
             // 
-            this.textBox1.Location = new System.Drawing.Point(280, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
-            this.textBox1.TabIndex = 3;
+            this.prodtxtbx.Location = new System.Drawing.Point(283, 29);
+            this.prodtxtbx.Name = "prodtxtbx";
+            this.prodtxtbx.Size = new System.Drawing.Size(116, 20);
+            this.prodtxtbx.TabIndex = 3;
             // 
-            // inventoryQuery
+            // inventoryQueryfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.prodtxtbx);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.invSearchbtn);
             this.Controls.Add(this.inventoryQueryListBox);
-            this.Name = "inventoryQuery";
-            this.Text = "inventoryQuery";
+            this.Name = "inventoryQueryfrm";
+            this.Text = "Search Inventory";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,8 +86,8 @@
         #endregion
 
         private System.Windows.Forms.ListBox inventoryQueryListBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button invSearchbtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox prodtxtbx;
     }
 }

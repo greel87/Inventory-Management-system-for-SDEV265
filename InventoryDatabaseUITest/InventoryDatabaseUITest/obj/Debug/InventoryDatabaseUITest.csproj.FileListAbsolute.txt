@@ -20,3 +20,5 @@ C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUI
 C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.inventoryQuery.resources
 C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.viewCustomerfrm.resources
 C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.viewStockfrm.resources
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.customerQueryfrm.resources
+C:\xampp\htdocs\Inventory_Management\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.inventoryQueryfrm.resources
