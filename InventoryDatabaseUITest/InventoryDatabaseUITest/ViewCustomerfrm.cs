@@ -49,5 +49,10 @@ namespace InventoryDatabaseUITest
             customer = query.GetCustomers(Lnametxtbx.Text);
             UpdateBinding();
         }
+
+        private void ViewCustomerfrm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
