@@ -26,8 +26,8 @@ namespace InventoryDatabaseUITest
 
         private void UpdateBinding()
         { 
-            CustomerQueryListBox.DataSource = customer;
-            CustomerQueryListBox.DisplayMember = "customerInfofull";
+            CustomerSearchListBox.DataSource = customer;
+            CustomerSearchListBox.DisplayMember = "customerInfofull";
         }
 
 
@@ -48,11 +48,6 @@ namespace InventoryDatabaseUITest
 
             customer = query.GetCustomers(Lnametxtbx.Text);
             UpdateBinding();
-        }
-
-        private void ViewCustomerfrm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -288,7 +288,6 @@
             this.Controls.Add(this.custSearchbtn);
             this.Name = "ViewCustomerfrm";
             this.Text = "Search Customer";
-            this.Load += new System.EventHandler(this.ViewCustomerfrm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

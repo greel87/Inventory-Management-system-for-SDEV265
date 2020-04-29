@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using InventoryDatabaseUITest.BAL;
 using System.Windows.Forms;
+using Dapper;
 
 namespace InventoryDatabaseUITest.DAL
 {
@@ -17,51 +18,11 @@ namespace InventoryDatabaseUITest.DAL
         //Select query customers
         public List<customerBAL> GetCustomers(string lName)
         {
-            List<customerBAL> resultsList = new List<customerBAL>();
-            customerBAL results = null;
             //uses db connection to create a stored procedure command and adds the results to the list
             using (MySqlConnection conn = new MySqlConnection(Helper.cnnVal("invmanagdb")))
             {
-
-
-                MySqlDataReader read = null;
-                MySqlCommand cmd = new MySqlCommand();
-               
-
-                conn.Open();
-                cmd.Connection = conn;
-                cmd.CommandText = "get_customers";
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@last", lName);
-                read = cmd.ExecuteReader();
-                try
-                {
-                    while (read.Read())
-                    {
-                        results = new customerBAL();
-                        results.Customer_ID = int.Parse(read["Customer_ID"].ToString());
-                        results.Fname = read["Fname"].ToString();
-                        results.Lname = read["Lname"].ToString();
-                        results.Street = read["Street"].ToString();
-                        results.State_ID = read["State_ID"].ToString();
-                        results.Zip = read["Zip"].ToString();
-                        results.Phone = read["Phone"].ToString();
-                        results.Email = read["Email"].ToString();
-                        resultsList.Add(results);
-                }      
-                    
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-
-                    read.Close();
-                    conn.Close();
-                    
-                }
+                var resultsList = conn.Query<customerBAL>("get_customers", new { last = lName }, commandType: CommandType.StoredProcedure).ToList();
+                
                 return resultsList;
                 
             }
