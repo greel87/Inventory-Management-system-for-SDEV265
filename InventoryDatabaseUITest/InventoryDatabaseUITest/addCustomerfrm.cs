@@ -34,5 +34,21 @@ namespace InventoryDatabaseUITest
         }
 
 
+        private void back_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homefrm HomeForm = new Homefrm();
+            HomeForm.ShowDialog();
+            this.Close();
+        }
+
+        private void viewInv_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewCustomerfrm viewCustomerfrm = new ViewCustomerfrm();
+            viewCustomerfrm.ShowDialog();
+            this.Close();
+        }
+
     }
 }

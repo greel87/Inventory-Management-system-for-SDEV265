@@ -25,11 +25,7 @@ namespace InventoryDatabaseUITest
         }
 
         private void UpdateBinding()
-<<<<<<< HEAD
-        { 
-=======
-        {
->>>>>>> b9745a8d3670a289ad322270eb1dfde48a57adae
+
             CustomerSearchListBox.DataSource = customer;
             CustomerSearchListBox.DisplayMember = "customerInfofull";
         }
