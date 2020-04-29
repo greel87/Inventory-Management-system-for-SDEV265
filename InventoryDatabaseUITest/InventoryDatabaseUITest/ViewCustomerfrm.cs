@@ -26,8 +26,8 @@ namespace InventoryDatabaseUITest
 
         private void UpdateBinding()
         {
-            CustomerSearchListBox.DataSource = customer;
-            CustomerSearchListBox.DisplayMember = "customerInfofull";
+
+            customerDatagridView.DataSource = customer;
         }
 
 
@@ -47,6 +47,8 @@ namespace InventoryDatabaseUITest
             customer = query.GetCustomers(Lnametxtbx.Text);
             UpdateBinding();
         }
+
+    
     }
 }
     

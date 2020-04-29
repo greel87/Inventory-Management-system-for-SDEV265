@@ -18,21 +18,26 @@ namespace InventoryDatabaseUITest.DAL
         //Select query customers
         public List<customerBAL> GetCustomers(string lName)
         {
-            //uses db connection to create a stored procedure command and adds the results to the list
+            //uses dapper to connect to a MySql database from helper class connection string
             using (MySqlConnection conn = new MySqlConnection(Helper.cnnVal("invmanagdb")))
             {
-                var resultsList = conn.Query<customerBAL>("get_customers", new { last = lName }, commandType: CommandType.StoredProcedure).ToList();
-                
-                return resultsList;
+                var results = conn.Query<customerBAL>("get_customers", new { last = lName },
+                    commandType: CommandType.StoredProcedure).AsList();
+                return results;
                 
             }
         }
-        /*public List<stockBAL> GetInventory(string product)
+        public List<stockBAL> GetInventory(string product)
         {
-            List<stockBAL> resultsList = new List<stockBAL>();
-            stockBAL results = null;
+            using (MySqlConnection conn = new MySqlConnection(Helper.cnnVal("invmanagdb")))
+            {
+                var resultsList = conn.Query<stockBAL>("get_inventory", new { Product = product }, commandType: CommandType.StoredProcedure).ToList();
+
+                return resultsList;
+
+            }
 
 
-        }*/
+        }
     }
 }

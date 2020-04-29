@@ -61,6 +61,11 @@
     <Compile Include="BAL\OrderLineBAL.cs" />
     <Compile Include="BAL\ordersBAL.cs" />
     <Compile Include="BAL\stockBAL.cs" />
+    <Compile Include="invmanagdbtestDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ViewCustomerfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +124,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="invmanagdbtestDataSet.xsc">
+      <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="invmanagdbtestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>invmanagdbtestDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="invmanagdbtestDataSet.xss">
+      <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
