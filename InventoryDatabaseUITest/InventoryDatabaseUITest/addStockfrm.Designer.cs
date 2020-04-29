@@ -43,25 +43,28 @@
             // 
             // UPC
             // 
-            this.UPC.Location = new System.Drawing.Point(71, 185);
+            this.UPC.Location = new System.Drawing.Point(106, 285);
+            this.UPC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.UPC.Name = "UPC";
-            this.UPC.Size = new System.Drawing.Size(125, 20);
+            this.UPC.Size = new System.Drawing.Size(186, 26);
             this.UPC.TabIndex = 0;
             // 
             // stockQuant
             // 
-            this.stockQuant.Location = new System.Drawing.Point(593, 185);
+            this.stockQuant.Location = new System.Drawing.Point(890, 285);
+            this.stockQuant.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.stockQuant.Name = "stockQuant";
-            this.stockQuant.Size = new System.Drawing.Size(120, 20);
+            this.stockQuant.Size = new System.Drawing.Size(180, 26);
             this.stockQuant.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 164);
+            this.label1.Location = new System.Drawing.Point(102, 252);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 18);
+            this.label1.Size = new System.Drawing.Size(59, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "UPC";
             // 
@@ -69,9 +72,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(590, 164);
+            this.label2.Location = new System.Drawing.Point(885, 252);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(93, 26);
             this.label2.TabIndex = 3;
             this.label2.Text = "Quantity";
             // 
@@ -79,28 +83,32 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(219, 54);
+            this.label3.Location = new System.Drawing.Point(328, 83);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(358, 39);
+            this.label3.Size = new System.Drawing.Size(527, 58);
             this.label3.TabIndex = 4;
             this.label3.Text = "Add Stock to Inventory";
             // 
             // viewInv
             // 
             this.viewInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewInv.Location = new System.Drawing.Point(308, 290);
+            this.viewInv.Location = new System.Drawing.Point(462, 446);
+            this.viewInv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.viewInv.Name = "viewInv";
-            this.viewInv.Size = new System.Drawing.Size(146, 28);
+            this.viewInv.Size = new System.Drawing.Size(219, 43);
             this.viewInv.TabIndex = 5;
             this.viewInv.Text = "View Inventory";
             this.viewInv.UseVisualStyleBackColor = true;
+            this.viewInv.Click += new System.EventHandler(this.viewInv_Click);
             // 
             // back
             // 
             this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(325, 387);
+            this.back.Location = new System.Drawing.Point(488, 595);
+            this.back.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(120, 29);
+            this.back.Size = new System.Drawing.Size(180, 45);
             this.back.TabIndex = 7;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -108,36 +116,39 @@
             // 
             // prodName
             // 
-            this.prodName.Location = new System.Drawing.Point(249, 184);
+            this.prodName.Location = new System.Drawing.Point(374, 283);
+            this.prodName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.prodName.Name = "prodName";
-            this.prodName.Size = new System.Drawing.Size(125, 20);
+            this.prodName.Size = new System.Drawing.Size(186, 26);
             this.prodName.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(246, 163);
+            this.label4.Location = new System.Drawing.Point(369, 251);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 18);
+            this.label4.Size = new System.Drawing.Size(71, 26);
             this.label4.TabIndex = 10;
             this.label4.Text = "Name";
             // 
             // serialNumber
             // 
             this.serialNumber.AutoSize = true;
-            this.serialNumber.Location = new System.Drawing.Point(423, 184);
+            this.serialNumber.Location = new System.Drawing.Point(634, 283);
+            this.serialNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.serialNumber.Name = "serialNumber";
-            this.serialNumber.Size = new System.Drawing.Size(135, 17);
+            this.serialNumber.Size = new System.Drawing.Size(201, 24);
             this.serialNumber.TabIndex = 11;
             this.serialNumber.Text = "Requires Serial number";
             this.serialNumber.UseVisualStyleBackColor = true;
             // 
             // addStockfrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.serialNumber);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.prodName);
@@ -148,6 +159,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.stockQuant);
             this.Controls.Add(this.UPC);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "addStockfrm";
             this.Text = "Add Stock";
             ((System.ComponentModel.ISupportInitialize)(this.stockQuant)).EndInit();
