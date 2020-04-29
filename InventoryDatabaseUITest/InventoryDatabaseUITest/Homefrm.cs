@@ -22,27 +22,42 @@ namespace InventoryDatabaseUITest
 
         private void addStock_Click(object sender, EventArgs e)
         {
-            addStockfrm addStockform = new addStockfrm();
-            addStockform.Show();
             this.Hide();
+            addStockfrm addStockform = new addStockfrm();
+            addStockform.ShowDialog();
+            this.Close();
 
         }
 
         private void viewInv_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ViewInventoryfrm ViewInventoryForm = new ViewInventoryfrm();
+            ViewInventoryForm.ShowDialog();
+            this.Close();
         }
 
         private void viewCust_Click(object sender, EventArgs e)
         {
-            ViewCustomerfrm viewCustomerfrm = new ViewCustomerfrm();
-            viewCustomerfrm.Show();
             this.Hide();
+            ViewCustomerfrm viewCustomerfrm = new ViewCustomerfrm();
+            viewCustomerfrm.ShowDialog();
+            this.Close();
+        }
+
+        private void addCustomer_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addCustomerfrm AddCustomerForm = new addCustomerfrm();
+            AddCustomerForm.ShowDialog();
+            this.Close();
         }
 
         private void exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+
     }
 }
