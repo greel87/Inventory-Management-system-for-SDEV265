@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace InventoryDatabaseUITest
 {
-   
+
     public partial class addStockfrm : Form
     {
         public addStockfrm()
@@ -20,13 +20,18 @@ namespace InventoryDatabaseUITest
 
         private void back_Click(object sender, EventArgs e)
         {
-            //taken from https://stackoverflow.com/questions/3005732/showing-a-hidden-form
-            var formToShow = Application.OpenForms.Cast<Form>().FirstOrDefault(c => c is Homefrm);
-            if (formToShow != null)
-            {
-                formToShow.Show();
-                this.Close();
-            }
+            this.Hide();
+            Homefrm HomeForm = new Homefrm();
+            HomeForm.ShowDialog();
+            this.Close();
+        }
+
+        private void viewInv_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewInventoryfrm ViewInventoryForm = new ViewInventoryfrm();
+            ViewInventoryForm.ShowDialog();
+            this.Close();
         }
     }
 }

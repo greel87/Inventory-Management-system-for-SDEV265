@@ -24,5 +24,13 @@ namespace InventoryDatabaseUITest
             HomeForm.ShowDialog();
             this.Close();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homefrm HomeForm = new Homefrm();
+            HomeForm.ShowDialog();
+            this.Close();
+        }
     }
 }

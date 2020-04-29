@@ -17,7 +17,7 @@ namespace InventoryDatabaseUITest
     public partial class ViewCustomerfrm : Form
     {
         List<customerBAL> customer = new List<customerBAL>();
-        
+
         public ViewCustomerfrm()
         {
             InitializeComponent();
@@ -25,21 +25,18 @@ namespace InventoryDatabaseUITest
         }
 
         private void UpdateBinding()
-        { 
-            CustomerQueryListBox.DataSource = customer;
-            CustomerQueryListBox.DisplayMember = "customerInfofull";
+        {
+            CustomerSearchListBox.DataSource = customer;
+            CustomerSearchListBox.DisplayMember = "customerInfofull";
         }
 
 
         private void custBackbtn_Click(object sender, EventArgs e)
         {
-            //taken from https://stackoverflow.com/questions/3005732/showing-a-hidden-form
-            var formToShow = Application.OpenForms.Cast<Form>().FirstOrDefault(c => c is Homefrm);
-            if (formToShow != null)
-            {
-                formToShow.Show();
-                this.Close();
-            }
+            this.Hide();
+            Homefrm HomeForm = new Homefrm();
+            HomeForm.ShowDialog();
+            this.Close();
         }
 
         private void custSearchbtn_Click(object sender, EventArgs e)
@@ -48,11 +45,6 @@ namespace InventoryDatabaseUITest
 
             customer = query.GetCustomers(Lnametxtbx.Text);
             UpdateBinding();
-        }
-
-        private void ViewCustomerfrm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

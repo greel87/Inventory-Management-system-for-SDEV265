@@ -58,6 +58,12 @@ namespace InventoryDatabaseUITest
             this.Close();
         }
 
-
+        private void addCustomer_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            addCustomerfrm AddCustomerForm = new addCustomerfrm();
+            AddCustomerForm.ShowDialog();
+            this.Close();
+        }
     }
 }
