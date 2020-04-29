@@ -88,7 +88,7 @@
             // viewInv
             // 
             this.viewInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewInv.Location = new System.Drawing.Point(308, 290);
+            this.viewInv.Location = new System.Drawing.Point(148, 293);
             this.viewInv.Name = "viewInv";
             this.viewInv.Size = new System.Drawing.Size(146, 28);
             this.viewInv.TabIndex = 5;

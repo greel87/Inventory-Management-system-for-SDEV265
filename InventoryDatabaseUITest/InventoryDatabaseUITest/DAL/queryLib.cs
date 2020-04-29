@@ -31,13 +31,26 @@ namespace InventoryDatabaseUITest.DAL
         {
             using (MySqlConnection conn = new MySqlConnection(Helper.cnnVal("invmanagdb")))
             {
-                var resultsList = conn.Query<stockBAL>("get_inventory", new { Product = product }, commandType: CommandType.StoredProcedure).ToList();
+                var resultsList = conn.Query<stockBAL>("get_inventory", new { Product = product }, commandType: CommandType.StoredProcedure).AsList();
 
                 return resultsList;
 
             }
 
 
+        }
+        public List<customerBAL> addCustomer(string fName, string lName, string Street,
+            string State_ID, string Zip, string Phone, string Email)
+        {
+            using (MySqlConnection conn = new MySqlConnection(Helper.cnnVal("invmanagdb")))
+            {
+                var resultsList = conn.Query<customerBAL>("add_customers", new {firstName = fName, lastName = lName,
+                StreetAddress = Street, state_id_code = State_ID, zipCode = Zip, 
+                    phoneNumber = Phone, emailAddress = Email }, commandType: CommandType.StoredProcedure).AsList();
+
+                return resultsList;
+
+            }
         }
     }
 }
