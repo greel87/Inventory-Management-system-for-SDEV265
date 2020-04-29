@@ -78,11 +78,10 @@
             this.custSearchbtn.TabIndex = 5;
             this.custSearchbtn.Text = "Search";
             this.custSearchbtn.UseVisualStyleBackColor = true;
-            this.custSearchbtn.Click += new System.EventHandler(this.custSearchbtn_Click);
             // 
             // custBackbtn
             // 
-            this.custBackbtn.Location = new System.Drawing.Point(445, 397);
+            this.custBackbtn.Location = new System.Drawing.Point(446, 397);
             this.custBackbtn.Name = "custBackbtn";
             this.custBackbtn.Size = new System.Drawing.Size(75, 23);
             this.custBackbtn.TabIndex = 8;

@@ -94,6 +94,7 @@
             this.viewInv.TabIndex = 5;
             this.viewInv.Text = "View Inventory";
             this.viewInv.UseVisualStyleBackColor = true;
+            this.viewInv.Click += new System.EventHandler(this.viewInv_Click);
             // 
             // back
             // 

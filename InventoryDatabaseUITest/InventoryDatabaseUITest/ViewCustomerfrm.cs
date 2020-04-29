@@ -25,10 +25,11 @@ namespace InventoryDatabaseUITest
         }
 
         private void UpdateBinding()
-
+        {
             CustomerSearchListBox.DataSource = customer;
             CustomerSearchListBox.DisplayMember = "customerInfofull";
         }
+
 
 
         private void custBackbtn_Click(object sender, EventArgs e)
@@ -48,3 +49,4 @@ namespace InventoryDatabaseUITest
         }
     }
 }
+    
