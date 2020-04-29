@@ -17,8 +17,6 @@ namespace InventoryDatabaseUITest
             InitializeComponent();
         }
 
-<<<<<<< HEAD
-=======
         private void viewInv_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -35,8 +33,6 @@ namespace InventoryDatabaseUITest
             this.Close();
         }
 
-
->>>>>>> a83a6973d409f01f4150474ecaea6b5969aa7604
         private void back_Click_1(object sender, EventArgs e)
         {
             this.Hide();
