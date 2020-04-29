@@ -31,6 +31,7 @@ namespace InventoryDatabaseUITest
         }
 
 
+
         private void custBackbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -48,3 +49,4 @@ namespace InventoryDatabaseUITest
         }
     }
 }
+    
