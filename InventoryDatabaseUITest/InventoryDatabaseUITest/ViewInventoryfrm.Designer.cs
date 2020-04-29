@@ -31,7 +31,7 @@
             this.invSearchbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.prodtxtbx = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.backbtn = new System.Windows.Forms.Button();
             this.prodNametxtbx = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnViewinventory = new System.Windows.Forms.Button();
@@ -41,7 +41,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.stockDatagridVw = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.stockDatagridVw)).BeginInit();
             this.SuspendLayout();
@@ -71,15 +70,15 @@
             this.prodtxtbx.Size = new System.Drawing.Size(116, 20);
             this.prodtxtbx.TabIndex = 3;
             // 
-            // button1
+            // backbtn
             // 
-            this.button1.Location = new System.Drawing.Point(431, 403);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.backbtn.Location = new System.Drawing.Point(308, 415);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.TabIndex = 4;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // prodNametxtbx
             // 
@@ -157,21 +156,12 @@
             this.button4.Text = "Search";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(227, 403);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "New Search";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // stockDatagridVw
             // 
             this.stockDatagridVw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.stockDatagridVw.Location = new System.Drawing.Point(377, 37);
+            this.stockDatagridVw.Location = new System.Drawing.Point(325, 51);
             this.stockDatagridVw.Name = "stockDatagridVw";
-            this.stockDatagridVw.Size = new System.Drawing.Size(385, 257);
+            this.stockDatagridVw.Size = new System.Drawing.Size(451, 291);
             this.stockDatagridVw.TabIndex = 15;
             // 
             // ViewInventoryfrm
@@ -180,7 +170,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.stockDatagridVw);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button4);
@@ -190,7 +179,7 @@
             this.Controls.Add(this.prodNametxtbx);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnViewinventory);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.prodtxtbx);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.invSearchbtn);
@@ -206,7 +195,7 @@
         private System.Windows.Forms.Button invSearchbtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox prodtxtbx;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button backbtn;
         private System.Windows.Forms.TextBox prodNametxtbx;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnViewinventory;
@@ -216,7 +205,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView stockDatagridVw;
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.viewInv = new System.Windows.Forms.Button();
-            this.back = new System.Windows.Forms.Button();
+            this.viewInvbtn = new System.Windows.Forms.Button();
+            this.backbtn = new System.Windows.Forms.Button();
             this.fNameTxtbx = new System.Windows.Forms.TextBox();
             this.lNameTxtbx = new System.Windows.Forms.TextBox();
             this.emailTxtbx = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.addCustomer = new System.Windows.Forms.Button();
+            this.addCustomerbtn = new System.Windows.Forms.Button();
             this.stateTxtbx = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -60,27 +60,27 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Add Customer";
             // 
-            // viewInv
+            // viewInvbtn
             // 
-            this.viewInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewInv.Location = new System.Drawing.Point(234, 318);
-            this.viewInv.Name = "viewInv";
-            this.viewInv.Size = new System.Drawing.Size(146, 28);
-            this.viewInv.TabIndex = 6;
-            this.viewInv.Text = "View Customer";
-            this.viewInv.UseVisualStyleBackColor = true;
-            this.viewInv.Click += new System.EventHandler(this.viewInv_Click_1);
+            this.viewInvbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewInvbtn.Location = new System.Drawing.Point(234, 318);
+            this.viewInvbtn.Name = "viewInvbtn";
+            this.viewInvbtn.Size = new System.Drawing.Size(146, 28);
+            this.viewInvbtn.TabIndex = 6;
+            this.viewInvbtn.Text = "View Customer";
+            this.viewInvbtn.UseVisualStyleBackColor = true;
+            this.viewInvbtn.Click += new System.EventHandler(this.viewInvbtn_Click);
             // 
-            // back
+            // backbtn
             // 
-            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(345, 381);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(120, 29);
-            this.back.TabIndex = 8;
-            this.back.Text = "Back";
-            this.back.UseVisualStyleBackColor = true;
-            this.back.Click += new System.EventHandler(this.back_Click);
+            this.backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbtn.Location = new System.Drawing.Point(345, 381);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(120, 29);
+            this.backbtn.TabIndex = 8;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // fNameTxtbx
             // 
@@ -211,16 +211,16 @@
             this.label10.TabIndex = 27;
             this.label10.Text = "Zip Code";
             // 
-            // addCustomer
+            // addCustomerbtn
             // 
-            this.addCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCustomer.Location = new System.Drawing.Point(425, 318);
-            this.addCustomer.Name = "addCustomer";
-            this.addCustomer.Size = new System.Drawing.Size(146, 28);
-            this.addCustomer.TabIndex = 28;
-            this.addCustomer.Text = "Add";
-            this.addCustomer.UseVisualStyleBackColor = true;
-            this.addCustomer.Click += new System.EventHandler(this.addCustomer_Click);
+            this.addCustomerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCustomerbtn.Location = new System.Drawing.Point(425, 318);
+            this.addCustomerbtn.Name = "addCustomerbtn";
+            this.addCustomerbtn.Size = new System.Drawing.Size(146, 28);
+            this.addCustomerbtn.TabIndex = 28;
+            this.addCustomerbtn.Text = "Add";
+            this.addCustomerbtn.UseVisualStyleBackColor = true;
+            this.addCustomerbtn.Click += new System.EventHandler(this.addCustomerbtn_Click);
             // 
             // stateTxtbx
             // 
@@ -234,7 +234,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.addCustomer);
+            this.Controls.Add(this.addCustomerbtn);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -251,8 +251,8 @@
             this.Controls.Add(this.emailTxtbx);
             this.Controls.Add(this.lNameTxtbx);
             this.Controls.Add(this.fNameTxtbx);
-            this.Controls.Add(this.back);
-            this.Controls.Add(this.viewInv);
+            this.Controls.Add(this.backbtn);
+            this.Controls.Add(this.viewInvbtn);
             this.Controls.Add(this.label3);
             this.Name = "addCustomerfrm";
             this.Text = "Add Customer";
@@ -264,8 +264,8 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button viewInv;
-        private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button viewInvbtn;
+        private System.Windows.Forms.Button backbtn;
         private System.Windows.Forms.TextBox fNameTxtbx;
         private System.Windows.Forms.TextBox lNameTxtbx;
         private System.Windows.Forms.TextBox emailTxtbx;
@@ -281,7 +281,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button addCustomer;
+        private System.Windows.Forms.Button addCustomerbtn;
         private System.Windows.Forms.TextBox stateTxtbx;
     }
 }

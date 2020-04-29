@@ -28,15 +28,6 @@ namespace InventoryDatabaseUITest
             stockDatagridVw.DataSource = stock;
             stockDatagridVw.Columns[2].Visible = false;
         }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            Homefrm HomeForm = new Homefrm();
-            HomeForm.ShowDialog();
-            this.Close();
-        }
-
         private void btnViewinventory_Click(object sender, EventArgs e)
         {
 
@@ -46,6 +37,14 @@ namespace InventoryDatabaseUITest
             stock = query.GetInventory(prodNametxtbx.Text);
             UpdateBinding();
 
+        }
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homefrm HomeForm = new Homefrm();
+            HomeForm.ShowDialog();
+            this.Close();
         }
     }
 }

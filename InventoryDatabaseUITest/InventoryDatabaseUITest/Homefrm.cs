@@ -19,17 +19,15 @@ namespace InventoryDatabaseUITest
         {
             InitializeComponent();
         }
-
-        private void addStock_Click(object sender, EventArgs e)
+        private void addStockbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             addStockfrm addStockform = new addStockfrm();
             addStockform.ShowDialog();
             this.Close();
-
         }
 
-        private void viewInv_Click(object sender, EventArgs e)
+        private void viewInvbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             ViewInventoryfrm ViewInventoryForm = new ViewInventoryfrm();
@@ -37,7 +35,7 @@ namespace InventoryDatabaseUITest
             this.Close();
         }
 
-        private void viewCust_Click(object sender, EventArgs e)
+        private void viewCustbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             ViewCustomerfrm viewCustomerfrm = new ViewCustomerfrm();
@@ -45,7 +43,7 @@ namespace InventoryDatabaseUITest
             this.Close();
         }
 
-        private void addCustomer_Click(object sender, EventArgs e)
+        private void addCustomerbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             addCustomerfrm AddCustomerForm = new addCustomerfrm();
@@ -55,14 +53,6 @@ namespace InventoryDatabaseUITest
 
         private void exit_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void addCustomer_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            addCustomerfrm AddCustomerForm = new addCustomerfrm();
-            AddCustomerForm.ShowDialog();
             this.Close();
         }
     }
