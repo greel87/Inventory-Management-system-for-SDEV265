@@ -17,8 +17,7 @@ namespace InventoryDatabaseUITest
         {
             InitializeComponent();
         }
-
-        private void back_Click(object sender, EventArgs e)
+        private void backbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             Homefrm HomeForm = new Homefrm();
@@ -26,7 +25,7 @@ namespace InventoryDatabaseUITest
             this.Close();
         }
 
-        private void viewInv_Click(object sender, EventArgs e)
+        private void viewInvbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             ViewInventoryfrm ViewInventoryForm = new ViewInventoryfrm();

@@ -50,8 +50,9 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.CustomerSearchListBox = new System.Windows.Forms.ListBox();
             this.button7 = new System.Windows.Forms.Button();
+            this.customerDatagridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.customerDatagridView)).BeginInit();
             this.SuspendLayout();
             // 
             // Lnametxtbx
@@ -78,6 +79,7 @@
             this.custSearchbtn.TabIndex = 5;
             this.custSearchbtn.Text = "Search";
             this.custSearchbtn.UseVisualStyleBackColor = true;
+            this.custSearchbtn.Click += new System.EventHandler(this.custSearchbtn_Click);
             // 
             // custBackbtn
             // 
@@ -239,14 +241,6 @@
             this.button6.Text = "Search";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // CustomerSearchListBox
-            // 
-            this.CustomerSearchListBox.FormattingEnabled = true;
-            this.CustomerSearchListBox.Location = new System.Drawing.Point(409, 79);
-            this.CustomerSearchListBox.Name = "CustomerSearchListBox";
-            this.CustomerSearchListBox.Size = new System.Drawing.Size(359, 264);
-            this.CustomerSearchListBox.TabIndex = 27;
-            // 
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(289, 397);
@@ -256,13 +250,21 @@
             this.button7.Text = "New Search";
             this.button7.UseVisualStyleBackColor = true;
             // 
+            // customerDatagridView
+            // 
+            this.customerDatagridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customerDatagridView.Location = new System.Drawing.Point(324, 80);
+            this.customerDatagridView.Name = "customerDatagridView";
+            this.customerDatagridView.Size = new System.Drawing.Size(464, 258);
+            this.customerDatagridView.TabIndex = 29;
+            // 
             // ViewCustomerfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.customerDatagridView);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.CustomerSearchListBox);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button6);
@@ -287,6 +289,7 @@
             this.Controls.Add(this.custSearchbtn);
             this.Name = "ViewCustomerfrm";
             this.Text = "Search Customer";
+            ((System.ComponentModel.ISupportInitialize)(this.customerDatagridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,7 +319,7 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ListBox CustomerSearchListBox;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataGridView customerDatagridView;
     }
 }

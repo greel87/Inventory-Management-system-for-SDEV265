@@ -7,41 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using InventoryDatabaseUITest.DAL;
+using InventoryDatabaseUITest.BAL;
 
 namespace InventoryDatabaseUITest
 {
     public partial class addCustomerfrm : Form
     {
+        List<customerBAL> customer = new List<customerBAL>();
         public addCustomerfrm()
         {
             InitializeComponent();
         }
-
-        private void viewInv_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ViewCustomerfrm ViewCustomerForm = new ViewCustomerfrm();
-            ViewCustomerForm.ShowDialog();
-            this.Close();
-        }
-
-        private void back_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Homefrm HomeForm = new Homefrm();
-            HomeForm.ShowDialog();
-            this.Close();
-        }
-
-        private void back_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            Homefrm HomeForm = new Homefrm();
-            HomeForm.ShowDialog();
-            this.Close();
-        }
-
-        private void viewInv_Click_1(object sender, EventArgs e)
+        private void viewInvbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             ViewCustomerfrm viewCustomerfrm = new ViewCustomerfrm();
@@ -49,5 +27,20 @@ namespace InventoryDatabaseUITest
             this.Close();
         }
 
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homefrm HomeForm = new Homefrm();
+            HomeForm.ShowDialog();
+            this.Close();
+        }
+
+        private void addCustomerbtn_Click(object sender, EventArgs e)
+        {
+            queryLib query = new queryLib();
+
+            customer = query.addCustomer(fNameTxtbx.Text, lNameTxtbx.Text, Streettxtbx.Text,
+                stateTxtbx.Text, ziptxtbx.Text, phonetxtbx.Text, emailTxtbx.Text);
+        }
     }
 }

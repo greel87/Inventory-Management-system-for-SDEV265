@@ -9,6 +9,7 @@ namespace InventoryDatabaseUITest.BAL
 {
     public class stockBAL
     {
+        
         //maps stock table from mysql to class
         public string UPC { get; set; }
         public string Prod_Name { get; set; }
@@ -17,10 +18,6 @@ namespace InventoryDatabaseUITest.BAL
         public int serial_number { get; set; }
 
 
-        public string stockInfoFull
-        {   //1234567 name 2 123456789102 this displays the stock info requested
-            get { return $"{ UPC } { Prod_Name } { Quantity }{ serial_number }"; }
-        }
-
     }
 }
+
