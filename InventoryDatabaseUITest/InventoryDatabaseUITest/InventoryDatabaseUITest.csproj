@@ -66,7 +66,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="PrintSetup.cs" />
+    <Compile Include="printCls.cs" />
     <Compile Include="ViewCustomerfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +125,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="invmanagdbtestDataSet.xsc">
       <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
     </None>

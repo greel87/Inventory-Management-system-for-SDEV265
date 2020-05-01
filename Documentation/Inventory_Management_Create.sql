@@ -1,4 +1,4 @@
-﻿  use invmanagdbtest;
+﻿  use invmanagedbtest;
 
 Create Table if not exists Customer
 (
@@ -16,29 +16,7 @@ Create Table if not exists Stock
 (
 UPC varchar(12)  PRIMARY KEY,
 Prod_Name varchar(255) Not null,
-Serial_Number_Required boolean Not null,
-Quantity int unsigned not null,
-Serial_number int
-);
-
-Create Table if not exists SFS
-(
-Serial_Number varchar(255) PRIMARY KEY,
-UPC varchar(12) Not null,
-Sold boolean not null,
-Warranty boolean,
-
-FOREIGN KEY (UPC) REFERENCES Stock(UPC)
-);
-
-Create Table if not exists F3000
-(
-Serial_Number varchar(255) PRIMARY KEY,
-UPC varchar(12) Not null,
-Sold boolean not null,
-Warranty boolean,
-
-FOREIGN KEY (UPC) REFERENCES Stock(UPC)
+Quantity int unsigned not null
 );
 
 Create Table if not exists Orders
@@ -59,7 +37,5 @@ Quantity Int Unsigned,
 
 PRIMARY KEY (Order_ID, UPC),
 FOREIGN KEY (Order_ID) REFERENCES Orders(Order_ID),
-FOREIGN KEY (UPC) REFERENCES Stock(UPC),
-FOREIGN KEY (Serial_Number) REFERENCES SFS(Serial_Number),
-FOREIGN KEY (Serial_Number) REFERENCES F3000(Serial_Number)
+FOREIGN KEY (UPC) REFERENCES Stock(UPC)
 );
