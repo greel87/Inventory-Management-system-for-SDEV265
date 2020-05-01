@@ -26,7 +26,6 @@ namespace InventoryDatabaseUITest
         {
 
             stockDatagridVw.DataSource = stock;
-            stockDatagridVw.Columns[2].Visible = false;
         }
         private void btnViewinventory_Click(object sender, EventArgs e)
         {
@@ -45,6 +44,13 @@ namespace InventoryDatabaseUITest
             Homefrm HomeForm = new Homefrm();
             HomeForm.ShowDialog();
             this.Close();
+        }
+        // code taken from https://stackoverflow.com/questions/15853746/how-to-print-values-from-a-datagridview-control/15853845
+        //first answer
+        private void print_Click(object sender, EventArgs e)
+        {
+            printCls _printCLS = new printCls(stockDatagridVw, "Stock");
+            _printCLS.PrintForm();
         }
     }
 }

@@ -16,10 +16,5 @@ namespace InventoryDatabaseUITest.BAL
         public int Quantity { get; set; }
         public string Serial_Number { get; set; }
 
-
-        public string orderLinefull
-        {   //25 3 10/11/2020 this displays requested order information
-            get { return $"{ Order_ID } { UPC } { Serial_Number } { Quantity }"; }
-        }
     }
 }

@@ -20,11 +20,5 @@ namespace InventoryDatabaseUITest.BAL
         public string Phone { get; set; }
         public string Email { get; set; }
 
-
-        public string customerInfofull
-        {   //25 Fname Lname Street State Zip Phone number Email. This displays customer information requested
-            get { return $"{ Customer_ID } { Fname } { Lname } { Street } { State_ID }{ Zip }{ Phone }{ Email }"; }
-        }
-
     }
 }

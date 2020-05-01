@@ -1,5 +1,5 @@
    
-use invmanagdbtest;
+use invmanagedbtest;
 
 DELIMITER $$
 
@@ -50,7 +50,6 @@ CREATE PROCEDURE add_customers
 BEGIN
 	 insert into customer
      (
-         Customer_ID,
          Fname,
          Lname,
          Street,
@@ -61,7 +60,6 @@ BEGIN
      )
      values
      (
-         ID,
          firstName,
          lastName,
          streetAddress,
@@ -82,9 +80,7 @@ CREATE PROCEDURE add_new_stock
 (
 	IN upcVal VARCHAR(12),
     IN Product VARCHAR(255),
-    IN SerialRequired tinyint(1),
-    IN quantityAmount int,
-    IN SerialNumber char(2)
+    IN quantityAmount int
 
 )
 BEGIN
@@ -92,17 +88,13 @@ BEGIN
      (
          UPC,
          Prod_Name,
-         Serial_Number_Required,
-         Quantity,
-         serial_number
+         Quantity
      )
      values
      (
          upcVal,
          Product,
-         SerialRequired,
-         quantityAmount,
-         SerialNumber
+         quantityAmount
      );
 END$$
 
@@ -151,7 +143,6 @@ Drop procedure if exists update_customer$$
 
 CREATE PROCEDURE update_customer 
 (
-   IN ID int(10),
     IN firstName VARCHAR(255),
     IN lastName VARCHAR(255),
     IN streetAddress VARCHAR(255),

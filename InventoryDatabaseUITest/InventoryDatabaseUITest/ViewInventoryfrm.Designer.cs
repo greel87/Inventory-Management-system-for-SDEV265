@@ -42,6 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.stockDatagridVw = new System.Windows.Forms.DataGridView();
+            this.print = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.stockDatagridVw)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(308, 415);
+            this.backbtn.Location = new System.Drawing.Point(482, 415);
             this.backbtn.Name = "backbtn";
             this.backbtn.Size = new System.Drawing.Size(75, 23);
             this.backbtn.TabIndex = 4;
@@ -164,11 +165,22 @@
             this.stockDatagridVw.Size = new System.Drawing.Size(451, 291);
             this.stockDatagridVw.TabIndex = 15;
             // 
+            // print
+            // 
+            this.print.Location = new System.Drawing.Point(259, 415);
+            this.print.Name = "print";
+            this.print.Size = new System.Drawing.Size(75, 23);
+            this.print.TabIndex = 16;
+            this.print.Text = "Print";
+            this.print.UseVisualStyleBackColor = true;
+            this.print.Click += new System.EventHandler(this.print_Click);
+            // 
             // ViewInventoryfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.print);
             this.Controls.Add(this.stockDatagridVw);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
@@ -206,5 +218,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView stockDatagridVw;
+        private System.Windows.Forms.Button print;
     }
 }
