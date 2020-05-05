@@ -55,5 +55,13 @@ namespace InventoryDatabaseUITest
         {
             this.Close();
         }
+
+        private void UPC_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UPCfrm UPCForm = new UPCfrm();
+            UPCForm.ShowDialog();
+            this.Close();
+        }
     }
 }

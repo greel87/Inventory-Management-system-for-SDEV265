@@ -65,3 +65,10 @@ C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\In
 C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\Dapper.xml
 C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\MySql.Data.xml
 C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.csproj.CopyComplete
+C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\zxing.dll
+C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\zxing.presentation.dll
+C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\zxing.pdb
+C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\zxing.xml
+C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\zxing.presentation.pdb
+C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\bin\Debug\zxing.presentation.xml
+C:\xampp\htdocs\Inventory_Management\Inventory_System\InventoryDatabaseUITest\InventoryDatabaseUITest\obj\Debug\InventoryDatabaseUITest.UPCfrm.resources
