@@ -52,5 +52,29 @@ namespace InventoryDatabaseUITest.DAL
 
             }
         }
-    }
+        public void updateStock(string product, int quantityAmount)
+        {
+            using (MySqlConnection conn = new MySqlConnection(Helper.cnnVal("invmanagdb")))
+            {
+                if (quantityAmount <= 0)
+                {
+                    var resultsList = conn.Execute("update_stock_reduce", new { Product = product, quantityAmount = quantityAmount },
+              commandType: CommandType.StoredProcedure);
+                }
+                else
+                {
+                    var resultsList = conn.Execute("update_stock_add", new { Product = product, quantityAmount = quantityAmount },
+              commandType: CommandType.StoredProcedure);
+                } 
+            }
+        }
+        public void addNewStock(string upcValue, string product, int quantityAmount)
+        {
+            using (MySqlConnection conn = new MySqlConnection(Helper.cnnVal("invmanagdb")))
+            {
+                var resultsList = conn.Execute("add_new_stock", new { upcVal = upcValue, product = product, quantityAmount = quantityAmount },
+              commandType: CommandType.StoredProcedure);
+            }
+        }
+    } 
 }
