@@ -48,7 +48,11 @@ namespace InventoryDatabaseUITest
             UpdateBinding();
         }
 
-    
+        private void printBtn_Click(object sender, EventArgs e)
+        {
+            printCls _printCLS = new printCls(customerDatagridView, "Customer");
+            _printCLS.PrintForm();
+        }
     }
 }
     

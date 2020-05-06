@@ -33,6 +33,7 @@
             this.custSearchbtn = new System.Windows.Forms.Button();
             this.custBackbtn = new System.Windows.Forms.Button();
             this.customerDatagridView = new System.Windows.Forms.DataGridView();
+            this.printBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.customerDatagridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,11 +81,22 @@
             this.customerDatagridView.Size = new System.Drawing.Size(464, 258);
             this.customerDatagridView.TabIndex = 29;
             // 
+            // printBtn
+            // 
+            this.printBtn.Location = new System.Drawing.Point(234, 397);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Size = new System.Drawing.Size(75, 23);
+            this.printBtn.TabIndex = 30;
+            this.printBtn.Text = "Print";
+            this.printBtn.UseVisualStyleBackColor = true;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
+            // 
             // ViewCustomerfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.printBtn);
             this.Controls.Add(this.customerDatagridView);
             this.Controls.Add(this.custBackbtn);
             this.Controls.Add(this.Lnametxtbx);
@@ -105,5 +117,6 @@
         private System.Windows.Forms.Button custSearchbtn;
         private System.Windows.Forms.Button custBackbtn;
         private System.Windows.Forms.DataGridView customerDatagridView;
+        private System.Windows.Forms.Button printBtn;
     }
 }

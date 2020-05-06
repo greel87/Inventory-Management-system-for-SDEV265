@@ -43,12 +43,25 @@ namespace InventoryDatabaseUITest
         {
             queryLib query = new queryLib();
             query.addNewStock(upcTxtbx.Text, prodNametxtbx.Text, (int)stockQuantnumeric.Value);
+            upcTxtbx.Text = "";
+            prodNametxtbx.Text = "";
+            stockQuantnumeric.Value = 0;
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
             queryLib query = new queryLib();
             query.updateStock(prodNametxtbx.Text, (int)stockQuantnumeric.Value);
+            prodNametxtbx.Text = "";
+            stockQuantnumeric.Value = 0;
+        }
+
+        private void reduceStockbtn_Click(object sender, EventArgs e)
+        {
+            queryLib query = new queryLib();
+            query.reduceStock(prodNametxtbx.Text, (int)stockQuantnumeric.Value);
+            prodNametxtbx.Text = "";
+            stockQuantnumeric.Value = 0;
         }
     }
 }

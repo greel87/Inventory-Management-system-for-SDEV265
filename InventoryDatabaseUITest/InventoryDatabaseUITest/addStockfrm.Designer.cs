@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.addNewbtn = new System.Windows.Forms.Button();
             this.updateBtn = new System.Windows.Forms.Button();
+            this.reduceStockbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.stockQuantnumeric)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +90,7 @@
             // viewInvbtn
             // 
             this.viewInvbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewInvbtn.Location = new System.Drawing.Point(71, 314);
+            this.viewInvbtn.Location = new System.Drawing.Point(81, 274);
             this.viewInvbtn.Name = "viewInvbtn";
             this.viewInvbtn.Size = new System.Drawing.Size(126, 28);
             this.viewInvbtn.TabIndex = 5;
@@ -128,7 +129,7 @@
             // addNewbtn
             // 
             this.addNewbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addNewbtn.Location = new System.Drawing.Point(319, 314);
+            this.addNewbtn.Location = new System.Drawing.Point(251, 274);
             this.addNewbtn.Name = "addNewbtn";
             this.addNewbtn.Size = new System.Drawing.Size(126, 28);
             this.addNewbtn.TabIndex = 12;
@@ -139,19 +140,31 @@
             // updateBtn
             // 
             this.updateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateBtn.Location = new System.Drawing.Point(587, 314);
+            this.updateBtn.Location = new System.Drawing.Point(424, 274);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(126, 28);
             this.updateBtn.TabIndex = 13;
-            this.updateBtn.Text = "Update Stock";
+            this.updateBtn.Text = "Add Stock";
             this.updateBtn.UseVisualStyleBackColor = true;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
+            // 
+            // reduceStockbtn
+            // 
+            this.reduceStockbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reduceStockbtn.Location = new System.Drawing.Point(593, 274);
+            this.reduceStockbtn.Name = "reduceStockbtn";
+            this.reduceStockbtn.Size = new System.Drawing.Size(126, 28);
+            this.reduceStockbtn.TabIndex = 14;
+            this.reduceStockbtn.Text = "Reduce Stock";
+            this.reduceStockbtn.UseVisualStyleBackColor = true;
+            this.reduceStockbtn.Click += new System.EventHandler(this.reduceStockbtn_Click);
             // 
             // addStockfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.reduceStockbtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.addNewbtn);
             this.Controls.Add(this.label4);
@@ -185,5 +198,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button addNewbtn;
         private System.Windows.Forms.Button updateBtn;
+        private System.Windows.Forms.Button reduceStockbtn;
     }
 }

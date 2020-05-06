@@ -41,6 +41,12 @@ namespace InventoryDatabaseUITest
 
             customer = query.addCustomer(fNameTxtbx.Text, lNameTxtbx.Text, Streettxtbx.Text,
                 stateTxtbx.Text, ziptxtbx.Text, phonetxtbx.Text, emailTxtbx.Text);
+            fNameTxtbx.Text = "";
+            lNameTxtbx.Text = "";
+            stateTxtbx.Text = "";
+            ziptxtbx.Text = "";
+            phonetxtbx.Text = "";
+            emailTxtbx.Text = "";
         }
     }
 }
