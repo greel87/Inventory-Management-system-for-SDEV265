@@ -52,6 +52,7 @@ namespace InventoryDatabaseUITest
         {
             queryLib query = new queryLib();
             query.updateStock(prodNametxtbx.Text, (int)stockQuantnumeric.Value);
+            upcTxtbx.Text = "";
             prodNametxtbx.Text = "";
             stockQuantnumeric.Value = 0;
         }
@@ -60,6 +61,7 @@ namespace InventoryDatabaseUITest
         {
             queryLib query = new queryLib();
             query.reduceStock(prodNametxtbx.Text, (int)stockQuantnumeric.Value);
+            upcTxtbx.Text = "";
             prodNametxtbx.Text = "";
             stockQuantnumeric.Value = 0;
         }
