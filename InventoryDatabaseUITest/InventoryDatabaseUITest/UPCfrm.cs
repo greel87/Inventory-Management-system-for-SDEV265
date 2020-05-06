@@ -30,16 +30,11 @@ namespace InventoryDatabaseUITest
 
         private void Print_Button_Click(object sender, EventArgs e)
         {
+            
             PrintDocument printDocument1 = new PrintDocument();
             printDocument1.PrintPage += new PrintPageEventHandler(pic_PrintPage);
             printDocument1.Print();
-            
-            
-            sendtext = UPCcode.Text;
-            this.Hide();
-            addStockfrm addStockForm = new addStockfrm();
-            addStockForm.ShowDialog();
-            this.Close();
+          
         }
 
         private void Back_Button_Click(object sender, EventArgs e)
@@ -54,5 +49,13 @@ namespace InventoryDatabaseUITest
             e.Graphics.DrawImage(pic.Image, 0, 0);
         }
 
+        private void AddStock_Button_Click(object sender, EventArgs e)
+        {
+            sendtext = UPCcode.Text;
+            this.Hide();
+            addStockfrm AddStockForm = new addStockfrm();
+            AddStockForm.ShowDialog();
+            this.Close();
+        }
     }
 }

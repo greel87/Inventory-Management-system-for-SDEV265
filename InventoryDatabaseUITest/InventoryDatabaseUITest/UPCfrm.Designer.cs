@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Print_Button = new System.Windows.Forms.Button();
             this.Back_Button = new System.Windows.Forms.Button();
+            this.AddStock_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,9 +49,9 @@
             // 
             // Encode_button
             // 
-            this.Encode_button.Location = new System.Drawing.Point(225, 330);
+            this.Encode_button.Location = new System.Drawing.Point(108, 329);
             this.Encode_button.Name = "Encode_button";
-            this.Encode_button.Size = new System.Drawing.Size(127, 43);
+            this.Encode_button.Size = new System.Drawing.Size(127, 45);
             this.Encode_button.TabIndex = 1;
             this.Encode_button.Text = "Encode";
             this.Encode_button.UseVisualStyleBackColor = true;
@@ -74,7 +75,7 @@
             // 
             // Print_Button
             // 
-            this.Print_Button.Location = new System.Drawing.Point(358, 330);
+            this.Print_Button.Location = new System.Drawing.Point(241, 331);
             this.Print_Button.Name = "Print_Button";
             this.Print_Button.Size = new System.Drawing.Size(127, 43);
             this.Print_Button.TabIndex = 4;
@@ -86,17 +87,28 @@
             // 
             this.Back_Button.Location = new System.Drawing.Point(491, 331);
             this.Back_Button.Name = "Back_Button";
-            this.Back_Button.Size = new System.Drawing.Size(127, 42);
+            this.Back_Button.Size = new System.Drawing.Size(128, 43);
             this.Back_Button.TabIndex = 5;
             this.Back_Button.Text = "Back";
             this.Back_Button.UseVisualStyleBackColor = true;
             this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
+            // 
+            // AddStock_Button
+            // 
+            this.AddStock_Button.Location = new System.Drawing.Point(375, 332);
+            this.AddStock_Button.Name = "AddStock_Button";
+            this.AddStock_Button.Size = new System.Drawing.Size(110, 42);
+            this.AddStock_Button.TabIndex = 6;
+            this.AddStock_Button.Text = "Add Stock";
+            this.AddStock_Button.UseVisualStyleBackColor = true;
+            this.AddStock_Button.Click += new System.EventHandler(this.AddStock_Button_Click);
             // 
             // UPCfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 384);
+            this.Controls.Add(this.AddStock_Button);
             this.Controls.Add(this.Back_Button);
             this.Controls.Add(this.Print_Button);
             this.Controls.Add(this.label1);
@@ -119,5 +131,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Print_Button;
         private System.Windows.Forms.Button Back_Button;
+        private System.Windows.Forms.Button AddStock_Button;
     }
 }
