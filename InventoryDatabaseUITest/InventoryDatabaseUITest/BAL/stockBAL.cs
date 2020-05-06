@@ -13,9 +13,7 @@ namespace InventoryDatabaseUITest.BAL
         //maps stock table from mysql to class
         public string UPC { get; set; }
         public string Prod_Name { get; set; }
-        public bool Serial_Number_Required { get; set; }
         public int Quantity { get; set; }
-        public int serial_number { get; set; }
 
 
     }

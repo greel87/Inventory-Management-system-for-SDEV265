@@ -9,12 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZXing;
 using Dapper;
-
+using System.Drawing.Printing;
 
 namespace InventoryDatabaseUITest
 {
     public partial class UPCfrm : Form
     {
+        public static string sendtext = "";
+        
         public UPCfrm()
         {
             InitializeComponent();
@@ -28,7 +30,16 @@ namespace InventoryDatabaseUITest
 
         private void Print_Button_Click(object sender, EventArgs e)
         {
-       
+            PrintDocument printDocument1 = new PrintDocument();
+            printDocument1.PrintPage += new PrintPageEventHandler(pic_PrintPage);
+            printDocument1.Print();
+            
+            
+            sendtext = UPCcode.Text;
+            this.Hide();
+            addStockfrm addStockForm = new addStockfrm();
+            addStockForm.ShowDialog();
+            this.Close();
         }
 
         private void Back_Button_Click(object sender, EventArgs e)
@@ -38,5 +49,10 @@ namespace InventoryDatabaseUITest
             HomeForm.ShowDialog();
             this.Close();
         }
+        private void pic_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(pic.Image, 0, 0);
+        }
+
     }
 }

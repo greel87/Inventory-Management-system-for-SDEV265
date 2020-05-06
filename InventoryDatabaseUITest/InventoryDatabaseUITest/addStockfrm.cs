@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using InventoryDatabaseUITest.DAL;
+using InventoryDatabaseUITest.BAL;
 
 namespace InventoryDatabaseUITest
 {
@@ -16,6 +18,10 @@ namespace InventoryDatabaseUITest
         public addStockfrm()
         {
             InitializeComponent();
+        }
+        private void addStockfrm_Load(object sender, EventArgs e)
+        {
+            upcTxtbx.Text = UPCfrm.sendtext;
         }
         private void backbtn_Click(object sender, EventArgs e)
         {
@@ -31,6 +37,18 @@ namespace InventoryDatabaseUITest
             ViewInventoryfrm ViewInventoryForm = new ViewInventoryfrm();
             ViewInventoryForm.ShowDialog();
             this.Close();
+        }
+
+        private void addNewbtn_Click(object sender, EventArgs e)
+        {
+            queryLib query = new queryLib();
+            query.addNewStock(upcTxtbx.Text, prodNametxtbx.Text, (int)stockQuantnumeric.Value);
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            queryLib query = new queryLib();
+            query.updateStock(prodNametxtbx.Text, (int)stockQuantnumeric.Value);
         }
     }
 }

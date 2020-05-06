@@ -57,12 +57,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewInventory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddNewInventory.Designer.cs">
-      <DependentUpon>AddNewInventory.cs</DependentUpon>
-    </Compile>
     <Compile Include="BAL\customerBAL.cs" />
     <Compile Include="BAL\OrderLineBAL.cs" />
     <Compile Include="BAL\ordersBAL.cs" />
