@@ -21,19 +21,19 @@ namespace InventoryDatabaseUITest
         {
             InitializeComponent();
         }
-
+        //zxing function to create barcode
         private void Encode_button_Click(object sender, EventArgs e)
         {
             BarcodeWriter newUPC = new BarcodeWriter() { Format = BarcodeFormat.CODE_128 };
             pic.Image = newUPC.Write(UPCcode.Text);
         }
-
+        // Print button crates a print document and wires the pic_PrintPage method to the event for printing
         private void Print_Button_Click(object sender, EventArgs e)
         {
             
-            PrintDocument printDocument1 = new PrintDocument();
-            printDocument1.PrintPage += new PrintPageEventHandler(pic_PrintPage);
-            printDocument1.Print();
+            PrintDocument printUPC = new PrintDocument();
+            printUPC.PrintPage += new PrintPageEventHandler(pic_PrintPage);
+            printUPC.Print();
           
         }
 
@@ -43,12 +43,12 @@ namespace InventoryDatabaseUITest
             Homefrm HomeForm = new Homefrm();
             HomeForm.ShowDialog();
             this.Close();
-        }
+        }// Method to print UPC 
         private void pic_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawImage(pic.Image, 0, 0);
         }
-
+        // button to go to add stock form and sends text entered in UPCcode text box
         private void AddStock_Button_Click(object sender, EventArgs e)
         {
             sendtext = UPCcode.Text;
@@ -56,6 +56,7 @@ namespace InventoryDatabaseUITest
             addStockfrm AddStockForm = new addStockfrm();
             AddStockForm.ShowDialog();
             this.Close();
+           
         }
     }
 }

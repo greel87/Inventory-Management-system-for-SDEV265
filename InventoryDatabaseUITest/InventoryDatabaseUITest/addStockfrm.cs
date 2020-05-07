@@ -22,6 +22,7 @@ namespace InventoryDatabaseUITest
         private void addStockfrm_Load(object sender, EventArgs e)
         {
             upcTxtbx.Text = UPCfrm.sendtext;
+            UPCfrm.sendtext = "";
         }
         private void backbtn_Click(object sender, EventArgs e)
         {
@@ -29,6 +30,9 @@ namespace InventoryDatabaseUITest
             Homefrm HomeForm = new Homefrm();
             HomeForm.ShowDialog();
             this.Close();
+            upcTxtbx.Text = "";
+            prodNametxtbx.Text = "";
+            stockQuantnumeric.Value = 0;
         }
 
         private void viewInvbtn_Click(object sender, EventArgs e)
@@ -37,6 +41,9 @@ namespace InventoryDatabaseUITest
             ViewInventoryfrm ViewInventoryForm = new ViewInventoryfrm();
             ViewInventoryForm.ShowDialog();
             this.Close();
+            upcTxtbx.Text = "";
+            prodNametxtbx.Text = "";
+            stockQuantnumeric.Value = 0;
         }
 
         private void addNewbtn_Click(object sender, EventArgs e)
