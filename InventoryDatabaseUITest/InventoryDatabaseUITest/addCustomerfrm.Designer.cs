@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.viewInvbtn = new System.Windows.Forms.Button();
+            this.viewCustBtn = new System.Windows.Forms.Button();
             this.backbtn = new System.Windows.Forms.Button();
             this.fNameTxtbx = new System.Windows.Forms.TextBox();
             this.lNameTxtbx = new System.Windows.Forms.TextBox();
@@ -60,16 +60,16 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Add Customer";
             // 
-            // viewInvbtn
+            // viewCustBtn
             // 
-            this.viewInvbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewInvbtn.Location = new System.Drawing.Point(217, 318);
-            this.viewInvbtn.Name = "viewInvbtn";
-            this.viewInvbtn.Size = new System.Drawing.Size(146, 28);
-            this.viewInvbtn.TabIndex = 6;
-            this.viewInvbtn.Text = "View Customer";
-            this.viewInvbtn.UseVisualStyleBackColor = true;
-            this.viewInvbtn.Click += new System.EventHandler(this.viewInvbtn_Click);
+            this.viewCustBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewCustBtn.Location = new System.Drawing.Point(217, 318);
+            this.viewCustBtn.Name = "viewCustBtn";
+            this.viewCustBtn.Size = new System.Drawing.Size(146, 28);
+            this.viewCustBtn.TabIndex = 6;
+            this.viewCustBtn.Text = "View Customer";
+            this.viewCustBtn.UseVisualStyleBackColor = true;
+            this.viewCustBtn.Click += new System.EventHandler(this.viewCustBtn_Click);
             // 
             // backbtn
             // 
@@ -252,7 +252,7 @@
             this.Controls.Add(this.lNameTxtbx);
             this.Controls.Add(this.fNameTxtbx);
             this.Controls.Add(this.backbtn);
-            this.Controls.Add(this.viewInvbtn);
+            this.Controls.Add(this.viewCustBtn);
             this.Controls.Add(this.label3);
             this.Name = "addCustomerfrm";
             this.Text = "Add Customer";
@@ -264,7 +264,7 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button viewInvbtn;
+        private System.Windows.Forms.Button viewCustBtn;
         private System.Windows.Forms.Button backbtn;
         private System.Windows.Forms.TextBox fNameTxtbx;
         private System.Windows.Forms.TextBox lNameTxtbx;

@@ -19,19 +19,22 @@ namespace InventoryDatabaseUITest
         {
             InitializeComponent();
         }
-        private void viewInvbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ViewCustomerfrm viewCustomerfrm = new ViewCustomerfrm();
-            viewCustomerfrm.ShowDialog();
-            this.Close();
-        }
 
         private void backbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             Homefrm HomeForm = new Homefrm();
             HomeForm.ShowDialog();
+            this.Close();
+        }
+
+       
+
+        private void viewCustBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewCustomerfrm viewCustomerfrm = new ViewCustomerfrm();
+            viewCustomerfrm.ShowDialog();
             this.Close();
         }
 
@@ -43,10 +46,13 @@ namespace InventoryDatabaseUITest
                 stateTxtbx.Text, ziptxtbx.Text, phonetxtbx.Text, emailTxtbx.Text);
             fNameTxtbx.Text = "";
             lNameTxtbx.Text = "";
+            Streettxtbx.Text = "";
+            cityTxtbx.Text = "";
             stateTxtbx.Text = "";
             ziptxtbx.Text = "";
             phonetxtbx.Text = "";
             emailTxtbx.Text = "";
         }
+       
     }
 }

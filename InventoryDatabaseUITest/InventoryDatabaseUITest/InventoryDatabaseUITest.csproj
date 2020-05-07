@@ -61,6 +61,9 @@
     <Compile Include="BAL\OrderLineBAL.cs" />
     <Compile Include="BAL\ordersBAL.cs" />
     <Compile Include="BAL\stockBAL.cs" />
+    <Compile Include="invmanagdbtestDataSet.cs">
+      <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="invmanagdbtestDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
