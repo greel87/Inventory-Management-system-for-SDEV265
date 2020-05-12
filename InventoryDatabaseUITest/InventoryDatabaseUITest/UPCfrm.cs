@@ -43,7 +43,8 @@ namespace InventoryDatabaseUITest
             Homefrm HomeForm = new Homefrm();
             HomeForm.ShowDialog();
             this.Close();
-        }// Method to print UPC 
+        }
+        // Method to print UPC 
         private void pic_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawImage(pic.Image, 0, 0);

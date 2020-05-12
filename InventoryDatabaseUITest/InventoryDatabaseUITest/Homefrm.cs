@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 
 //code used from IamTimCorey youtube video https://www.youtube.com/watch?v=Et2khGnrIqc&list=PLLWMQd6PeGY3b89Ni7xsNZddi9wD5Esv2
-
+// This form contains buttons to take user to different forms based on what they want to do
 namespace InventoryDatabaseUITest
 {
     public partial class Homefrm : Form

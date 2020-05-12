@@ -14,6 +14,7 @@ namespace InventoryDatabaseUITest
 {
     public partial class addCustomerfrm : Form
     {
+        //list to hold customer info to be sent to database
         List<customerBAL> customer = new List<customerBAL>();
         public addCustomerfrm()
         {
@@ -38,6 +39,7 @@ namespace InventoryDatabaseUITest
             this.Close();
         }
 
+        //takes customer info input and adds to database then sets all fields to blank
         private void addCustomerbtn_Click(object sender, EventArgs e)
         {
             queryLib query = new queryLib();

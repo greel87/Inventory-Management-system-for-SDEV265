@@ -23,7 +23,7 @@ namespace InventoryDatabaseUITest
             InitializeComponent();
             UpdateBinding();
         }
-
+        //updates the DataGridView with currently pulled information
         private void UpdateBinding()
         {
 
@@ -39,7 +39,7 @@ namespace InventoryDatabaseUITest
             HomeForm.ShowDialog();
             this.Close();
         }
-
+        // call to queryLib to execute select query
         private void custSearchbtn_Click(object sender, EventArgs e)
         {
             queryLib query = new queryLib();
@@ -48,6 +48,9 @@ namespace InventoryDatabaseUITest
             UpdateBinding();
         }
 
+        //call to print to print the form
+        // code taken from https://stackoverflow.com/questions/15853746/how-to-print-values-from-a-datagridview-control/15853845
+        //first answer
         private void printBtn_Click(object sender, EventArgs e)
         {
             printCls _printCLS = new printCls(customerDatagridView, "Customer");

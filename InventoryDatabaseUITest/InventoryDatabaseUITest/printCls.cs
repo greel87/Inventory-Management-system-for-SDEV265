@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 // code taken from https://stackoverflow.com/questions/15853746/how-to-print-values-from-a-datagridview-control/15853845
-//first answer
+//first answer this class prints the customer and stock forms
 
 namespace InventoryDatabaseUITest
 {

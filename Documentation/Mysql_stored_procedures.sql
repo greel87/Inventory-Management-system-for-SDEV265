@@ -11,7 +11,7 @@ CREATE PROCEDURE get_customers
 )
 BEGIN
 	SELECT * 
- 	FROM customer
+ 	FROM Customer
 	WHERE Lname = last;
 END$$
 
@@ -27,7 +27,7 @@ CREATE PROCEDURE get_inventory
 )
 BEGIN
 	SELECT * 
- 	FROM stock
+ 	FROM Stock
 	WHERE Prod_Name = Product;
 END$$
 
@@ -48,7 +48,7 @@ CREATE PROCEDURE add_customers
     IN emailAddress VARCHAR(255)
 )
 BEGIN
-	 insert into customer
+	 insert into Customer
      (
          Fname,
          Lname,
@@ -84,7 +84,7 @@ CREATE PROCEDURE add_new_stock
 
 )
 BEGIN
-	 insert into stock
+	 insert into Stock
      (
          UPC,
          Prod_Name,
@@ -111,7 +111,7 @@ CREATE PROCEDURE update_stock_add
 
 )
 BEGIN
-	 UPDATE stock
+	 UPDATE Stock
      SET Quantity = Quantity + quantityAmount
      WHERE Prod_Name = Product;
 END$$
@@ -129,7 +129,7 @@ CREATE PROCEDURE update_stock_reduce
 
 )
 BEGIN
-	 UPDATE stock
+	 UPDATE Stock
      SET Quantity = Quantity - quantityAmount
      WHERE Prod_Name = Product;
 END$$
@@ -152,7 +152,7 @@ CREATE PROCEDURE update_customer
     IN emailAddress VARCHAR(255)
 )
 BEGIN
-	 UPDATE customer
+	 UPDATE Customer
      SET Fname = firstName, Lname = lastName, 
      Street = streetAddress, State_ID = state_id_code, Zip = zipcode,
      Phone = phoneNumber, Email = emailAddress
@@ -171,7 +171,7 @@ CREATE PROCEDURE delete_stock
 
 )
 BEGIN
-	 delete from stock
+	 delete from Stock
      where Prod_Name = Product;
 END$$
 
@@ -187,7 +187,7 @@ CREATE PROCEDURE delete_customer
 
 )
 BEGIN
-	 delete from customer
+	 delete from Customer
      where Lname = lastName;
 END$$
 

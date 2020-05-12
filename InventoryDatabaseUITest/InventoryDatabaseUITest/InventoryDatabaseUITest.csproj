@@ -57,10 +57,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BAL\customerBAL.cs" />
-    <Compile Include="BAL\OrderLineBAL.cs" />
-    <Compile Include="BAL\ordersBAL.cs" />
-    <Compile Include="BAL\stockBAL.cs" />
+    <Compile Include="DAL\models\customerBAL.cs" />
+    <Compile Include="DAL\models\OrderLineBAL.cs" />
+    <Compile Include="DAL\models\ordersBAL.cs" />
+    <Compile Include="DAL\models\stockBAL.cs" />
     <Compile Include="invmanagdbtestDataSet.cs">
       <DependentUpon>invmanagdbtestDataSet.xsd</DependentUpon>
     </Compile>

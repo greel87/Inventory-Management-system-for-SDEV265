@@ -10,7 +10,7 @@ namespace InventoryDatabaseUITest.BAL
 {
    public class customerBAL
     {
-        //maps mysql customer table to class through properties
+        //maps mysql customer table to class through properties. This is the model used for all queries of customer
         public int Customer_ID { get; set; }
         public string Fname { get; set; }
         public string Lname { get; set; }

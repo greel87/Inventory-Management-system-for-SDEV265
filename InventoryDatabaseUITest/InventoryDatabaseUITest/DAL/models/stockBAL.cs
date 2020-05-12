@@ -10,7 +10,7 @@ namespace InventoryDatabaseUITest.BAL
     {
         
 
-        //maps stock table from mysql to class
+        //maps stock table from mysql to class. this is the model used for all queries in stock
         public string UPC { get; set; }
         public string Prod_Name { get; set; }
         public int Quantity { get; set; }

@@ -25,7 +25,7 @@ Order_ID int UNSIGNED not null  AUTO_INCREMENT PRIMARY KEY,
 Customer_ID INT UNSIGNED not null,
 Order_Date Date not null,
 
-FOREIGN KEY (Customer_ID) REFERENCES customer(Customer_ID)
+FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID)
 );
 
 Create Table if not exists Order_Line

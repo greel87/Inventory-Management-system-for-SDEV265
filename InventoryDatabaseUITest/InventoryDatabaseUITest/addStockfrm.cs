@@ -35,6 +35,7 @@ namespace InventoryDatabaseUITest
             stockQuantnumeric.Value = 0;
         }
 
+        //takes to the view inventory form and sets all values to blank
         private void viewInvbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -55,6 +56,7 @@ namespace InventoryDatabaseUITest
             stockQuantnumeric.Value = 0;
         }
 
+        //Takesw stock info and adds new item to database then sets all values to blank
         private void updateBtn_Click(object sender, EventArgs e)
         {
             queryLib query = new queryLib();
